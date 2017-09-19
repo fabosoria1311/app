@@ -45,6 +45,7 @@
 	}
 
 	body {
+		background-image: url("images/sigsipamba.jpg");
 		-webkit-text-size-adjust: none;
 	}
 
@@ -1552,6 +1553,7 @@
 
 	html, body {
 		background: #1c1d26;
+		
 	}
 
 	body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1572,6 +1574,41 @@
 		font-weight: 100;
 		line-height: 1.75em;
 	}
+	
+	.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  position:relative;
+ 
+    display:scroll;
+        position:fixed;
+        bottom:320px;
+        right:0px;
+		
+  background-color:red;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
 
 	a {
 		-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2015,6 +2052,8 @@
 
 	body.landing {
 		text-decoration: none;
+		
+		
 	}
 
 		body.landing:before {
@@ -2024,6 +2063,7 @@
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
+
 		}
 
 		body.landing:before {
@@ -2050,6 +2090,7 @@
 			top: 50%;
 			width: 2em;
 			z-index: -1;
+			
 		}
 
 		body.landing:after {
@@ -2057,7 +2098,7 @@
 			-webkit-animation: overlay-hide 1.5s ease-in forwards !important;
 			-ms-animation: overlay-hide 1.5s ease-in forwards !important;
 			animation: overlay-hide 1.5s ease-in forwards !important;
-			background: #1c1d26;
+		
 			content: '';
 			display: block;
 			height: 100%;
@@ -2067,6 +2108,7 @@
 			top: 0;
 			width: 100%;
 			z-index: -1;
+			
 		}
 
 		body.landing.is-loading:before {
@@ -2075,6 +2117,7 @@
 			-ms-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
 			animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
 			z-index: 100001;
+			
 		}
 
 		body.landing.is-loading:after {
@@ -2084,12 +2127,14 @@
 			animation: none !important;
 			opacity: 1;
 			z-index: 100000;
+			
 		}
 
 	@media (-webkit-min-device-pixel-ratio: 2) {
 
 		body.landing:before {
 			line-height: 2.025em;
+			
 		}
 
 	}
@@ -2100,6 +2145,15 @@
 		text-align: center;
 	}
 
+	
+	especial.li{
+			color: #ffffff;
+		display: block;
+		font-size: 0.9em;
+		font-weight: 300;
+		margin: 0 0 1em 0;
+	position:fixed
+	}
 	header p {
 		color: #ffffff;
 		position: relative;
