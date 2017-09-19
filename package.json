@@ -11,7 +11,8 @@
     "license": "Apache-2.0",
     "dependencies": {
         "cordova-browser": "^4.1.0",
-        "cordova-plugin-whitelist": "^1.3.2"
+        "cordova-plugin-whitelist": "^1.3.2",
+        "owl.carousel": "^2.2.0"
     },
     "cordova": {
         "plugins": {
