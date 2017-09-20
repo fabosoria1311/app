@@ -1,0 +1,61 @@
+.fullscreenBack {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgb(198, 11, 29);
+}
+
+#carRegions, #carRegions .owl-wrapper-outer, #carRegions .owl-wrapper-outer .owl-wrapper,
+	#carRegions .owl-wrapper-outer .owl-wrapper .owl-item, #carRegions .owl-wrapper-outer .owl-wrapper .owl-item .item
+	{
+	height: 100%;
+}
+
+.grayBack {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	text-align: center;
+	color: #fff;
+}
+
+.grayBack p {
+	margin-bottom: 5px;	
+}
+
+.grayBack .title {
+	font-size: 14px;
+}
+
+.grayBack .subtitle {
+	font-size: 24px;
+}
+
+.regionLogo {
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+.regionLogo img {
+	width: 150px;
+	margin: auto;
+}
+
+.fullscreenBack .btnMainContainer {
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+}
+
+.fullscreenBack .btnMainContainer .btnMain {
+	background-color: #333;
+	border-color: #333;
+}

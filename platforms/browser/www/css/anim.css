@@ -1,0 +1,170 @@
+.menu-bar {
+  display: block;
+  background: blue;
+  color: white;
+  padding: 0.5em;
+}
+
+.nav-menu {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  background: lightblue;
+}
+
+.content {
+  overflow-x: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  top: 2em;
+  overflow-y: auto;
+}
+
+#page1 {
+  background: lightgreen;
+}
+
+#page2 {
+  background: lightblue;
+}
+
+#page3 {
+  background: red;
+}
+
+.scroll {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  display: block;
+  overflow-x: hidden;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll .page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.scroll .page > div {
+  min-height: 100%;
+  padding: 1em;
+}
+.scroll .scrolled {
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.scroll .scrolled.ng-enter {
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+.scroll .scrolled.ng-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.scroll .scrolled.ng-leave {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.scroll .scrolled.ng-leave-active {
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+}
+.scroll .modal {
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease;
+  opacity: 1;
+}
+.scroll .modal.ng-enter {
+  opacity: 0;
+  -webkit-transform: scale(0.95) translate3d(0, 0.5em, 0);
+          transform: scale(0.95) translate3d(0, 0.5em, 0);
+}
+.scroll .modal.ng-enter-active {
+  opacity: 1;
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+}
+.scroll .modal.ng-leave {
+  opacity: 1;
+}
+.scroll .modal.ng-leave-active {
+  opacity: 0;
+}
+.scroll .backward .scrolled.ng-leave {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.scroll .backward .scrolled.ng-leave-active {
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+.scroll .backward .scrolled.ng-enter {
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+}
+.scroll .backward .scrolled.ng-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.scroll .backward .modal {
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease;
+  opacity: 1;
+}
+.scroll .backward .modal.ng-enter {
+  opacity: 0;
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+}
+.scroll .backward .modal.ng-enter-active {
+  opacity: 1;
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+}
+.scroll .backward .modal.ng-leave {
+  opacity: 1;
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+}
+.scroll .backward .modal.ng-leave-active {
+  opacity: 0;
+  -webkit-transform: scale(0.95) translate3d(0, 0.5em, 0);
+          transform: scale(0.95) translate3d(0, 0.5em, 0);
+}
+
+div[type='movie'] img {
+  float: right;
+  padding: 1em 0 1em 1em;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  background: lightgreen;
+}
+
+button, input {
+  min-height: 8mm;
+  margin: 2mm;
+}
+
+a {
+  padding-right: 1em;
+}
+
+h1 {
+  margin: 0;
+}
