@@ -21,10 +21,22 @@
 
 			<p class="subtitle">Pichincha</p>
 
+			<button type="button" ng-if="!showChangeRegion" ng-click="showRegionPicker()" class="btn btn-info">Cambiar de
+				provincia</button>
+
+			<div class="dropdown primaryDropdown" ng-if="showChangeRegion">
+				<button class="btn btn-secondary dropdown-toggle" type="button"
+					id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false">Selecciona una provincia</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</div>
+			</div>
+
 			<div class="btnMainContainer">
-			
-				<a href="app/views/home.html" class="btn btn-primary btnMain" >Continuar</a>
-				
+				<a href="#/home" type="button" class="btn btn-primary btnMain">Continuar</a>
 			</div>
 		</div>
 

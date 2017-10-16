@@ -4,7 +4,21 @@ var markers = [];
 
 climbApp.controller('DataCtrl', function($scope, $routeParams) {
 
+	$scope.showChangeRegion = false;
+
 	$scope.sLoadHome = function() {
+		$('#carState').owlCarousel({
+			autoPlay : 3500,
+			goToFirst : true,
+			goToFirstSpeed : 2000,
+			navigation : false,
+			slideSpeed : 700,
+			pagination : false,
+			transitionStyle : "fade",
+			singleItem : true,
+			mouseDrag : false,
+			items : 1,
+		});
 
 	}
 
@@ -20,9 +34,17 @@ climbApp.controller('DataCtrl', function($scope, $routeParams) {
 			transitionStyle : "fade",
 			singleItem : true,
 			mouseDrag : false,
-			items:1,
+			items : 1,
 		});
 
+	};
+
+	/*
+	 * REGION
+	 */
+
+	$scope.showRegionPicker = function() {
+		$scope.showChangeRegion = true;
 	}
 
 });

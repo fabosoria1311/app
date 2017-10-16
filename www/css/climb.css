@@ -1,10 +1,22 @@
+.mTop15 {
+	margin-top: 15px;
+}
+
+.mBot15 {
+	margin-bottom: 15px;
+}
+
+.w100 {
+	width: 100%;
+}
+
 .fullscreenBack {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgb(198, 11, 29);
+	z-index: 1;
 }
 
 #carRegions, #carRegions .owl-wrapper-outer, #carRegions .owl-wrapper-outer .owl-wrapper,
@@ -25,8 +37,20 @@
 	color: #fff;
 }
 
+.btn-info {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-color: #fff;;
+}
+
+.grayBack .btn-info {
+	margin-top: 15px;
+	font-size: 12px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-color: #fff;
+}
+
 .grayBack p {
-	margin-bottom: 5px;	
+	margin-bottom: 5px;
 }
 
 .grayBack .title {
@@ -58,4 +82,140 @@
 .fullscreenBack .btnMainContainer .btnMain {
 	background-color: #333;
 	border-color: #333;
+}
+
+.dropdown.primaryDropdown button {
+	background: none;
+	border-color: #fff;
+}
+
+.headerNavbar {
+	background-color: rgba(0, 0, 0, 0.25);
+	z-index: 1;
+}
+
+.headerNavbar a {
+	color: #ddd !important;
+}
+
+.sidebar {
+	width: 250px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.profileSection {
+	width: 100%;
+	text-align: center;
+}
+
+.profileSection a {
+	color: #ddd;
+}
+
+.sidebar .sidebarLinks {
+	
+}
+
+.sidebar .sidebarLinks a {
+	padding: 5px 10px;
+	color: #ddd;
+	font-size: 18px;
+}
+
+.sidebar .sidebarLinks a i {
+	float: right;
+}
+
+.profileSection img {
+	max-width: 75px;
+}
+
+#sidebar-wrapper.navbar {
+	align-items: initial;
+	background: #333;
+}
+
+.sidebar .hrDiv {
+	width: 100%;
+	padding: 0 10px;
+}
+
+.sidebar .hrDiv hr {
+	border-top: 1px solid #ddd;
+}
+
+.noMarginBorders {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.homeMainImg {
+	margin-top: -56px;
+}
+
+.homeMainImg img {
+	width: 100%;
+}
+
+.stateStats {
+	font-size: 18px;
+	text-align: center;
+}
+
+.stateDesc {
+	font-size: 14px;
+	text-align: justify;
+	margin-top: 10px;
+}
+
+.sectionTitle {
+	font-size: 20px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.cemtered {
+	text-align: center;
+}
+
+.zone {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.zone .zoneBackImg {
+	
+}
+
+.zone .zoneInfo {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0 15px;
+}
+
+.zone .zoneInfo .zoneName {
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.zone .zoneInfo .zoneDesc {
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.zone .zoneStars {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: gold;
+	padding: 0 15px;
+	font-size: 25px;
 }

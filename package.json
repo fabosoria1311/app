@@ -12,11 +12,13 @@
     "dependencies": {
         "cordova-browser": "^4.1.0",
         "cordova-plugin-whitelist": "^1.3.2",
-        "owl.carousel": "^2.2.0"
+        "owl.carousel": "^2.2.0",
+        "org.apache.cordova.wifiinfo": "https://github.com/HondaDai/PhoneGap-WifiInfoPlugin"
     },
     "cordova": {
         "plugins": {
-            "cordova-plugin-whitelist": {}
+            "cordova-plugin-whitelist": {},
+            "org.apache.cordova.wifiinfo": {}
         },
         "platforms": [
             "browser"
